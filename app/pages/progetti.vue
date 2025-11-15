@@ -4,6 +4,10 @@ import CanvasParticles from "~/components/CanvasParticles.vue";
 import { Icon } from "@iconify/vue";
 import pcImage from "/img/pc.webp";
 
+useSeoMeta({
+  title: "Giorgio Messore • Progetti",
+});
+
 const activeThumbnail = ref(null);
 const cardRefs = [];
 const windowWidth = ref(0);
@@ -15,6 +19,8 @@ const { data: projects } = await useAsyncData("projects", () => {
 })
 
 const openLink = (url) => window.open(url, "_blank");
+
+
 
 onMounted(() => {
   windowWidth.value = window.innerWidth;
@@ -119,14 +125,7 @@ onBeforeUnmount(() => {
                 class="btn text-black bg-indigo-500 shadow-md hover:shadow-indigo-500/50 transition-all duration-300"
                 @click="openLink(project.meta.siteLink)"
               >
-                Website
-              </div>
-              <div
-                v-if="project.meta.repoLink"
-                class="btn text-indigo-500 border border-indigo-500 shadow-md hover:shadow-indigo-500/50 transition-all duration-300"
-                @click="openLink(project.meta.repoLink)"
-              >
-                GitHub Repo
+                Guarda il sito
               </div>
             </div>
           </div>

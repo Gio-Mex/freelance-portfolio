@@ -13,6 +13,11 @@ const hardSkills = content.meta.hardSkills;
 const features = content.meta.features;
 const titleVisible = ref(false);
 
+useSeoMeta({
+  title: content.title,
+  description: content.description,
+})
+
 onMounted(() => {
   windowWidth.value = window.innerWidth;
   setTimeout(() => {

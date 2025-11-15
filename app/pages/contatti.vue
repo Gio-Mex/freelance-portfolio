@@ -4,6 +4,10 @@ import { Icon } from "@iconify/vue";
 import bgImage from "/img/bg-abstract.webp";
 import socials from "~/data/contactsContent.js";
 
+useSeoMeta({
+  title: "Giorgio Messore • Contatti",
+})
+
 const endpoint = import.meta.env.VITE_FORMSPREE_ENDPOINT;
 
 const form = reactive({

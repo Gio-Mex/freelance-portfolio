@@ -1,5 +1,5 @@
 ---
-title: "Crea la tua presenza online con Giorgio Messore - Sviluppatore Web"
+title: "Giorgio Messore • Sviluppatore Web"
 description: "Realizzo siti web moderni, veloci e su misura per privati, professionisti e piccole attività. Ti aiuto a dare forma alle tue idee online."
 bedges:
   - "mdi:vuejs"

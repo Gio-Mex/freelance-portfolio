@@ -1,6 +1,6 @@
 ---
-title: "La mia storia"
-description: "Un breve racconto del mio percorso personale e professionale"
+title: "Giorgio Messore • Bio"
+description: "Un breve racconto del mio percorso personale e professionale."
 scores:
 - title: "HTML e CSS"
   icon: "mdi:language-html5"

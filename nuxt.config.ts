@@ -29,7 +29,7 @@ export default defineNuxtConfig({
         {
           name: "description",
           content:
-            "Realizzo siti web e web-app moderni, veloci e su misura per privati, professionisti e piccole attività. Aiuto persone in tutta Italia, in particolare Lazio e Abruzzo, a dare forma alle proprie idee online.",
+            "Realizzo siti web moderni, veloci e su misura per privati, professionisti e piccole attività. Ti aiuto a dare forma alle tue idee online.",
         },
         {
           name: "keywords",
@@ -43,11 +43,10 @@ export default defineNuxtConfig({
           property: "og:site_name",
           content: "Giorgio Messore | Web Developer",
         },
-        { property: "og:title", content: "Crea la tua presenza online con Giorgio Messore" },
         {
           property: "og:description",
           content:
-             "Realizzo siti web e web-app moderni, veloci e su misura per privati, professionisti e piccole attività. Aiuto persone in tutta Italia, in particolare Lazio e Abruzzo, a dare forma alle proprie idee online.",
+            "Realizzo siti web moderni, veloci e su misura per privati, professionisti e piccole attività. Ti aiuto a dare forma alle tue idee online.",
         },
         { property: "og:type", content: "website" },
         { property: "og:url", content: "https://www.giorgiomessore.it" },
@@ -62,7 +61,7 @@ export default defineNuxtConfig({
         {
           name: "twitter:description",
           content:
-             "Realizzo siti web e web-app moderni, veloci e su misura per privati, professionisti e piccole attività. Aiuto persone in tutta Italia, in particolare Lazio e Abruzzo, a dare forma alle proprie idee online.",
+            "Realizzo siti web moderni, veloci e su misura per privati, professionisti e piccole attività. Ti aiuto a dare forma alle tue idee online.",
         },
         {
           name: "twitter:image",
@@ -70,6 +69,13 @@ export default defineNuxtConfig({
         },
       ],
       link: [
+        // Preload background image
+        {
+          rel: "preload",
+          as: "image",
+          href: "/img/home-preview.webp",
+          type: "image/webp",
+        },
         // Favicon + Canonical
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
         { rel: "canonical", href: "https://www.giorgiomessore.it" },

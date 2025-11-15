@@ -7,10 +7,15 @@ const windowWidth = ref(0);
 
 // Get bio content from content folder
 const content = await queryCollection("home").path("/bio").first();
+
 const rawScores = content.meta.scores;
 const animatedScores = ref([]);
-
 const flipped = ref(false);
+
+useSeoMeta({
+  title: content.title,
+  description: content.description,
+})
 
 const startAnimation = () => {
   if (flipped.value) return;
