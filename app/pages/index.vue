@@ -28,11 +28,9 @@ onMounted(() => {
   <ClientOnly>
     <CanvasParticles />
   </ClientOnly>
-  <NuxtImg
-    src="/img/bg-abstract.webp"
-    class="fixed top-0 left-0 h-screen w-full bg-cover bg-no-repeat bg-center -z-20"
-    preload
-  />
+  <div
+    class="bg-[url('/img/bg-abstract.webp')] fixed top-0 left-0 h-screen w-full bg-cover bg-no-repeat bg-center -z-20"
+  ></div>
 
   <!-- Hero Section -->
   <section class="relative flex h-screen mt-15 md:mt-40 lg:mt-20">

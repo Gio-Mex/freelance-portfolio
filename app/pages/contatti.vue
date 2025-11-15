@@ -52,11 +52,9 @@ const handleSubmit = async () => {
 </script>
 
 <template>
-  <NuxtImg
-    src="/img/bg-abstract.webp"
-    class="fixed top-0 left-0 h-screen w-full bg-cover bg-no-repeat bg-center -z-20"
-    preload
-  />
+  <div
+    class="bg-[url('/img/bg-abstract.webp')] fixed top-0 left-0 h-screen w-full bg-cover bg-no-repeat bg-center -z-20"
+  ></div>
   <div class="mt-4 mb-6 pt-22 px-3">
     <h1 class="text-5xl font-semibold text-center animated-gradient">
       Contattami
@@ -153,6 +151,4 @@ const handleSubmit = async () => {
       </p>
     </form>
   </div>
-
-
 </template>

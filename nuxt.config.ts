@@ -10,20 +10,11 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  modules: [
-    "@nuxt/icon",
-    "@nuxt/image-edge",
-    "@nuxt/image",
-    "@nuxt/content",
-    "@nuxt/fonts",
-  ],
+  modules: ["@nuxt/icon", "@nuxt/image", "@nuxt/content", "@nuxt/fonts"],
   content: {
     renderer: {
       anchorLinks: false,
     },
-  },
-  image: {
-    provider: "ipx",
   },
   app: {
     head: {
@@ -78,6 +69,19 @@ export default defineNuxtConfig({
         },
       ],
       link: [
+        // Preload images
+        {
+          rel: "preload",
+          as: "image",
+          href: "/img/bg-abstract.webp",
+          type: "image/webp",
+        },
+        {
+          rel: "preload",
+          as: "image",
+          href: "/img/my-pic.webp",
+          type: "image/webp",
+        },
         // Favicon + Canonical
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
         { rel: "canonical", href: "https://www.giorgiomessore.it" },
