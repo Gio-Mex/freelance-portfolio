@@ -14,7 +14,7 @@ const titleVisible = ref(false);
 useSeoMeta({
   title: content.title,
   description: content.description,
-})
+});
 
 onMounted(() => {
   windowWidth.value = window.innerWidth;
@@ -28,9 +28,11 @@ onMounted(() => {
   <ClientOnly>
     <CanvasParticles />
   </ClientOnly>
-  <div
-    class="bg-[url('/img/bg-abstract.webp')] fixed top-0 left-0 h-screen w-full bg-cover bg-no-repeat bg-center -z-20"
-  ></div>
+  <NuxtImg
+    src="/img/bg-abstract.webp"
+    class="fixed top-0 left-0 h-screen w-full bg-cover bg-no-repeat bg-center -z-20"
+    preload
+  />
 
   <!-- Hero Section -->
   <section class="relative flex h-screen mt-15 md:mt-40 lg:mt-20">
@@ -45,22 +47,22 @@ onMounted(() => {
         Sono Giorgio, il tuo
       </p>
       <h1
-        class="animated-gradient bg-clip-text text-transparent text-7xl md:text-9xl  lg:text-center lg:scale-107 xl:scale-125 tracking-tight"
+        class="animated-gradient bg-clip-text text-transparent text-7xl md:text-9xl lg:text-center lg:scale-107 xl:scale-125 tracking-tight"
       >
         web dev
       </h1></span
     >
 
     <div
-      class="relative h-[300px] md:h-[600px] lg:h-[400px] xl:h-[700px] w-2/3 md:w-full lg:w-1/3 mt-10 ms-auto rounded-es-full rounded-s-full shadow-md overflow-hidden hover:scale-105 hover:shadow-blue-500/50 transition-transform duration-500"
+      class="relative h-[300px] md:h-[600px] lg:h-[400px] xl:h-[700px] w-2/3 md:w-full lg:w-1/3 mt-10 ms-auto rounded-es-full rounded-s-full shadow-md overflow-hidden  hover:shadow-blue-500/50 transition-transform duration-500"
     >
-      <div class="absolute inset-0 bg-blue-800 opacity-10 z-20"></div>
       <NuxtImg
-        class="absolute top-5 left-2 lg:left-0 h-[300px] md:h-[600px] lg:h-[400px] xl:h-[700px] object-cover z-10"
+        class="absolute lg:left-0 h-[300px] md:h-[600px] lg:h-[400px] xl:h-[700px] object-cover z-10 hover:scale-105"
         src="img/my-pic.webp"
         alt="developer"
-        loading="eager"
+        preload
       />
+      <div class="absolute inset-0 bg-blue-800 opacity-10 z-20"></div>
     </div>
   </section>
 
@@ -70,18 +72,18 @@ onMounted(() => {
   >
     <div class="max-w-6xl text-center">
       <section
-        class="py-16 backdrop-blur-xs bg-indigo-500/5 border-y border-indigo-500/10"
+        class="py-16 backdrop-blur-xs bg-indigo-500/5 border-y border-indigo-500/10 px-3"
       >
         <h2 class="text-4xl md:text-5xl font-normal mb-8">
           Idee, persone e codice:<br /><span
             class="text-5xl md:text-6xl animated-gradient bg-clip-text text-transparent font-semibold"
-            >la mia connessione perfetta</span
+            >la connessione perfetta</span
           >
         </h2>
         <p class="text-lg md:px-20 italic">
           Credo nei progetti che nascono dal dialogo e crescono con la
-          passione.<br />Ogni sito o web-app è un ponte tra la tua visione e il mondo
-          digitale.<br />
+          passione.<br />Ogni sito o web-app è un ponte tra la tua visione e il
+          mondo digitale.<br />
         </p>
       </section>
       <p class="text-2xl px-2 md:px-20 my-14">
@@ -124,7 +126,7 @@ onMounted(() => {
           veloci e ottimizzati per ogni dispositivo.
         </p>
       </section>
-      <p class="text-2xl px-2 md:px-20 my-14">
+      <p class="text-2xl px-3 md:px-20 my-14">
         Questo è il mio
         <span class="text-indigo-400">stack tecnologico</span> che trasforma le
         tue idee in realtà digitali:
@@ -143,12 +145,14 @@ onMounted(() => {
             height="40"
             class="text-white/90! hover:drop-shadow-[0_0_8px_rgba(139,92,246,0.7)]"
           />
-          <span class="mt-2 text-sm font-medium flex">{{ skill.title }} <Icon
-            v-if="skill.learning"
-            icon="eos-icons:rotating-gear"
-            width="17"
-            height="17"
-            class="text-indigo-400 ms-1 hover:drop-shadow-[0_0_8px_rgba(139,92,246,0.7)]"
+          <span class="mt-2 text-sm font-medium flex"
+            >{{ skill.title }}
+            <Icon
+              v-if="skill.learning"
+              icon="eos-icons:rotating-gear"
+              width="17"
+              height="17"
+              class="text-indigo-400 ms-1 hover:drop-shadow-[0_0_8px_rgba(139,92,246,0.7)]"
           /></span>
         </section>
       </div>
@@ -163,9 +167,7 @@ onMounted(() => {
       Cosa significa tutto questo <span class="text-indigo-400">per te</span>?
     </h3>
 
-    <div
-      class="grid grid-cols-1 md:grid-cols-2 gap-8 px-4"
-    >
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
       <section
         v-for="feature in features"
         :key="feature.title"
@@ -177,9 +179,9 @@ onMounted(() => {
           height="50"
           class="text-indigo-500! hover:drop-shadow-[0_0_8px_rgba(139,92,246,0.7)]"
         />
-        <span class="mt-4 text-lg font-medium">{{ feature.title }}</span>
+        <span class="mt-4 text-lg">{{ feature.title }}</span>
       </section>
     </div>
   </section>
-  <CallToAction class="mb-10"/>
+  <CallToAction class="mb-10" />
 </template>

@@ -1,11 +1,15 @@
 <script setup>
 import { reactive, ref } from "vue";
 import { Icon } from "@iconify/vue";
-import socials from "~/data/contactsContent.js";
+
+// Get contacts content from content folder
+const content = await queryCollection("home").path("/contacts").first();
+const socials = content.meta.socials;
 
 useSeoMeta({
-  title: "Giorgio Messore • Contatti",
-})
+  title: content.title,
+  description: content.description,
+});
 
 const endpoint = import.meta.env.VITE_FORMSPREE_ENDPOINT;
 
@@ -46,22 +50,42 @@ const handleSubmit = async () => {
   }
 };
 </script>
+
 <template>
-  <div
-    class="bg-[url('/img/bg-abstract.webp')] fixed top-0 left-0 h-screen w-full bg-cover bg-no-repeat bg-center -z-20"
-  ></div>
-  <div class="mt-4 mb-10 pt-26">
-    <h2 class="text-4xl font-semibold text-center">
-      Sempre in <span class="animated-gradient text-5xl">contatto</span>
-    </h2>
+  <NuxtImg
+    src="/img/bg-abstract.webp"
+    class="fixed top-0 left-0 h-screen w-full bg-cover bg-no-repeat bg-center -z-20"
+    preload
+  />
+  <div class="mt-4 mb-6 pt-22 px-3">
+    <h1 class="text-5xl font-semibold text-center animated-gradient">
+      Contattami
+    </h1>
     <p class="text-lg text-center mt-5 italic">
       Hai un’idea o vuoi dare una nuova immagine alla tua attività?<br />
-      Scrivimi e parliamone: insieme possiamo costruire <span class="text-indigo-400">il tuo spazio digitale</span>.
+      Scrivimi e parliamone: insieme possiamo costruire
+      <span class="text-indigo-400">il tuo spazio digitale</span>.
     </p>
   </div>
-
+  <section class="flex justify-center">
+    <div class="max-w-xl mb-6 mx-2 flex space-x-12">
+      <a
+        v-for="social in socials"
+        :key="social.name"
+        :href="social.link"
+        target="_blank"
+      >
+        <Icon
+          :icon="social.icon"
+          width="40"
+          height="40"
+          class="text-blue-500 hover:scale-110 transition hover:drop-shadow-[0_0_8px_rgba(139,92,246,0.7)]"
+        />
+      </a>
+    </div>
+  </section>
   <div
-    class="max-w-xl mt-4 mx-2 p-6 flex justify-self-center rounded-lg shadow-lg shadow-blue-500 border border-indigo-300 backdrop-blur-md"
+    class="max-w-xl my-4 mx-2 p-6 flex justify-self-center rounded-lg shadow-lg shadow-blue-500 border border-indigo-300 backdrop-blur-md"
   >
     <form @submit.prevent="handleSubmit" class="space-y-5">
       <input
@@ -130,21 +154,5 @@ const handleSubmit = async () => {
     </form>
   </div>
 
-  <section class="flex justify-center">
-    <div class="max-w-xl mt-12 mb-6 mx-2 flex space-x-12">
-      <a
-        v-for="social in socials"
-        :key="social.name"
-        :href="social.link"
-        target="_blank"
-      >
-        <Icon
-          :icon="social.icon"
-          width="40"
-          height="40"
-          class="text-blue-500 hover:scale-110 transition hover:drop-shadow-[0_0_8px_rgba(139,92,246,0.7)]"
-        />
-      </a>
-    </div>
-  </section>
+
 </template>

@@ -69,19 +69,6 @@ export default defineNuxtConfig({
         },
       ],
       link: [
-        // Preload images
-        {
-          rel: "preload",
-          as: "image",
-          href: "/img/home-preview.webp",
-          type: "image/webp",
-        },
-        {
-          rel: "preload",
-          as: "image",
-          href: "/img/my-pic.webp",
-          type: "image/webp",
-        },
         // Favicon + Canonical
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
         { rel: "canonical", href: "https://www.giorgiomessore.it" },
