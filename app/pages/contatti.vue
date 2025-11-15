@@ -1,7 +1,6 @@
 <script setup>
 import { reactive, ref } from "vue";
 import { Icon } from "@iconify/vue";
-import bgImage from "/img/bg-abstract.webp";
 import socials from "~/data/contactsContent.js";
 
 useSeoMeta({
@@ -49,8 +48,7 @@ const handleSubmit = async () => {
 </script>
 <template>
   <div
-    class="fixed top-0 left-0 h-screen w-full bg-cover bg-no-repeat bg-center -z-20"
-    :style="{ backgroundImage: `url(${bgImage})` }"
+    class="bg-[url('/img/bg-abstract.webp')] fixed top-0 left-0 h-screen w-full bg-cover bg-no-repeat bg-center -z-20"
   ></div>
   <div class="mt-4 mb-10 pt-26">
     <h2 class="text-4xl font-semibold text-center">

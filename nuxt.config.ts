@@ -69,11 +69,17 @@ export default defineNuxtConfig({
         },
       ],
       link: [
-        // Preload background image
+        // Preload images
         {
           rel: "preload",
           as: "image",
           href: "/img/home-preview.webp",
+          type: "image/webp",
+        },
+        {
+          rel: "preload",
+          as: "image",
+          href: "/img/my-pic.webp",
           type: "image/webp",
         },
         // Favicon + Canonical

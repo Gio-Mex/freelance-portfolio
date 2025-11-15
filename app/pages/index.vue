@@ -1,8 +1,6 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { Icon } from "@iconify/vue";
-import bgImage from "/img/bg-abstract.webp";
-import myPic from "/img/my-pic.webp";
 
 const windowWidth = ref(0);
 
@@ -31,8 +29,7 @@ onMounted(() => {
     <CanvasParticles />
   </ClientOnly>
   <div
-    class="fixed top-0 left-0 h-screen w-full bg-cover bg-no-repeat bg-center -z-20"
-    :style="{ backgroundImage: `url(${bgImage})` }"
+    class="bg-[url('/img/bg-abstract.webp')] fixed top-0 left-0 h-screen w-full bg-cover bg-no-repeat bg-center -z-20"
   ></div>
 
   <!-- Hero Section -->
@@ -60,7 +57,7 @@ onMounted(() => {
       <div class="absolute inset-0 bg-blue-800 opacity-10 z-20"></div>
       <NuxtImg
         class="absolute top-5 left-2 lg:left-0 h-[300px] md:h-[600px] lg:h-[400px] xl:h-[700px] object-cover z-10"
-        :src="myPic"
+        src="img/my-pic.webp"
         alt="developer"
         loading="eager"
       />
