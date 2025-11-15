@@ -29,7 +29,7 @@ onMounted(() => {
     <CanvasParticles />
   </ClientOnly>
   <NuxtImg
-    src="public/img/bg-abstract.webp"
+    src="/img/bg-abstract.webp"
     class="fixed top-0 left-0 h-screen w-full bg-cover bg-no-repeat bg-center -z-20"
     preload
   />
@@ -58,7 +58,7 @@ onMounted(() => {
     >
       <NuxtImg
         class="absolute lg:left-0 h-[300px] md:h-[600px] lg:h-[400px] xl:h-[700px] object-cover z-10 hover:scale-105"
-        src="public/img/my-pic.webp"
+        src="/img/my-pic.webp"
         alt="developer"
         preload
       />

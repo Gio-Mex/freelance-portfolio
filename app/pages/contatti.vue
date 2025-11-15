@@ -53,7 +53,7 @@ const handleSubmit = async () => {
 
 <template>
   <NuxtImg
-    src="/public/img/bg-abstract.webp"
+    src="/img/bg-abstract.webp"
     class="fixed top-0 left-0 h-screen w-full bg-cover bg-no-repeat bg-center -z-20"
     preload
   />
