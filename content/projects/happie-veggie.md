@@ -3,7 +3,6 @@ title: "Happie Veggie"
 description: "Questo progetto usa Spoonacular per cercare e visualizzare ricette vegetariane (fino a 100 per richiesta). Sviluppato con React, TypeScript, Tailwind e Shadcn. Note: l'uso gratuito ha limiti giornalieri di ricerca."
 thumbnail: "/img/thumbnails/happie-veggie-img.webp"
 siteLink: "https://happie-veggie.netlify.app"
-repoLink: "https://github.com/Gio-Mex/happie-veggie"
 bedges:
   - "lineicons:react"
 features:

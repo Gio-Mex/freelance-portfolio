@@ -18,7 +18,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: "Crea la tua presenza online con Giorgio Messore | Sviluppatore Web ",
+      title: "Giorgio Messore | Sviluppatore Web ",
       htmlAttrs: {
         lang: "it",
       },
@@ -40,16 +40,17 @@ export default defineNuxtConfig({
 
         // Open Graph
         {
-          property: "og:title",
+          property: "og:site_name",
           content: "Giorgio Messore | Web Developer",
         },
+        { property: "og:title", content: "Crea la tua presenza online con Giorgio Messore" },
         {
           property: "og:description",
           content:
-            "Scopri i miei progetti e le mie skills come sviluppatore web fullstack.",
+             "Realizzo siti web e web-app moderni, veloci e su misura per privati, professionisti e piccole attività. Aiuto persone in tutta Italia, in particolare Lazio e Abruzzo, a dare forma alle proprie idee online.",
         },
         { property: "og:type", content: "website" },
-        { property: "og:url", content: "https://www.giorgiomessore.dev" },
+        { property: "og:url", content: "https://www.giorgiomessore.it" },
         {
           property: "og:image",
           content: "/img/home-preview.webp",
@@ -61,7 +62,7 @@ export default defineNuxtConfig({
         {
           name: "twitter:description",
           content:
-            "Scopri i miei progetti e le mie skills come sviluppatore web fullstack.",
+             "Realizzo siti web e web-app moderni, veloci e su misura per privati, professionisti e piccole attività. Aiuto persone in tutta Italia, in particolare Lazio e Abruzzo, a dare forma alle proprie idee online.",
         },
         {
           name: "twitter:image",

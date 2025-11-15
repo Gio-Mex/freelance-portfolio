@@ -3,7 +3,6 @@ title: "Look for a Book"
 description: "Look for a Book è un motore di ricerca per libri, alimentato da Open Library, realizzato con JavaScript e Material Design for Bootstrap. Ulteriori dettagli sulla repo Github."
 thumbnail: "/img/thumbnails/look-for-a-book-img.webp"
 siteLink: "https://gio-mex.github.io/look-for-a-book/dist/"
-repoLink: "https://github.com/Gio-Mex/look-for-a-book"
 bedges:
   - "mdi:language-javascript"
 features:
