@@ -10,11 +10,20 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  modules: ["@nuxt/icon", "@nuxt/image", "@nuxt/content", "@nuxt/fonts"],
+  modules: [
+    "@nuxt/icon",
+    "@nuxt/image-edge",
+    "@nuxt/image",
+    "@nuxt/content",
+    "@nuxt/fonts",
+  ],
   content: {
     renderer: {
       anchorLinks: false,
     },
+  },
+  image: {
+    provider: "ipx",
   },
   app: {
     head: {
