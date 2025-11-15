@@ -6,6 +6,9 @@ export default defineNuxtConfig({
   nitro: {
     preset: "vercel-static",
   },
+  image: {
+    provider: "vercel",
+  },
   css: ["./app/assets/css/main.css"],
   vite: {
     plugins: [tailwindcss()],
