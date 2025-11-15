@@ -4,10 +4,10 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
   nitro: {
-    preset: "vercel",
+    preset: "vercel-static",
   },
   image: {
-    provider: "vercel",
+    provider: "static",
   },
   css: ["./app/assets/css/main.css"],
   vite: {
