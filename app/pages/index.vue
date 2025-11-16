@@ -52,10 +52,10 @@ onMounted(() => {
     >
 
     <div
-      class="relative h-[300px] md:h-[600px] lg:h-[400px] xl:h-[700px] w-2/3 md:w-full lg:w-1/3 mt-10 ms-auto rounded-es-full rounded-s-full shadow-md overflow-hidden  hover:shadow-blue-500/50 transition-transform duration-500"
+      class="relative h-[300px] md:h-[600px] lg:h-[400px] xl:h-[700px] w-2/3 md:w-full lg:w-1/3 mt-10 ms-auto rounded-es-full rounded-s-full shadow-md overflow-hidden  hover:shadow-blue-500/50 hover:scale-105 transition-transform duration-500"
     >
       <NuxtImg
-        class="absolute lg:left-0 h-[300px] md:h-[600px] lg:h-[400px] xl:h-[700px] object-cover z-10 hover:scale-105"
+        class="absolute lg:left-0 h-[300px] md:h-[600px] lg:h-[400px] xl:h-[700px] object-cover z-10 "
         src="/img/my-pic.webp"
         alt="developer"
       />
