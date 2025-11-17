@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.giorgiomessore.it/</loc>
+    <lastmod>2025-11-18</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://www.giorgiomessore.it/#progetti</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.giorgiomessore.it/#bio</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.giorgiomessore.it/#contatti</loc>
+    <priority>0.80</priority>
+  </url>
+</urlset>
