@@ -18,7 +18,7 @@ onMounted(() => {
         currentRoute.path !== '/' && currentRoute.path !== '/progetti',
     },
     {
-      'fixed w-full bottom-0': currentRoute.path === '/contatti' && windowWidth > 1024,
+      'fixed w-full bottom-0': currentRoute.path === '/contatti' && windowWidth > 1280,
     }"
   >
     <section class="max-w-5xl mx-auto text-center">

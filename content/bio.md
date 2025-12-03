@@ -44,7 +44,7 @@ scores:
   max: 1500
 ---
 
-## La mia storia in breve
+## LA MIA STORIA IN BREVE
 
 Ciao, mi chiamo Giorgio Messore, sono nato a Roma nel 1985 e oggi vivo a Balsorano (AQ). Fin da bambino sono stato attratto dalla tecnologia e affascinato dagli automatismi, così la scelta più naturale è stata iscrivermi a un **istituto tecnico informatico**. Mi entusiasmava vedere cosa si potesse creare con pochi input e come tutto potesse prendere vita grazie al codice.
 

@@ -1,9 +1,9 @@
 ---
-title: "Change Cut Barber Shop"
+title: "CHANGE CUT BARBER SHOP"
 description: "Questo è il mio primo progetto reale. È il sito web di un barber shop. È stato realizzato con Vue.js e Google Firebase."
 thumbnail: "/img/thumbnails/change-cut-img.webp"
 siteLink: "https://change-cut.netlify.app"
-bedges:
+badges:
   - "mdi:vuejs"
   - "mdi:firebase"
 features:

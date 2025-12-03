@@ -78,10 +78,10 @@ onMounted(() => {
 
       <!-- Text -->
       <h1
-        class="absolute w-full md:w-11/12 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl md:text-5xl font-semibold text-end xl:text-center md:leading-relaxed pe-14 lg:pe-32 text-white rounded-lg animate-fade-slide-in"
+        class="absolute w-full md:w-11/12 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl md:text-5xl font-semibold text-end xl:text-center md:leading-relaxed tracking-wide pe-14 lg:pe-32 text-white rounded-lg animate-fade-slide-in"
       >
         Qualche info <br v-if="windowWidth < 1440"/>
-        <span class="animated-gradient text-7xl md:text-9xl">su di me</span>
+        <span class="animated-gradient text-6xl md:text-9xl">su di me</span>
       </h1>
     </section>
 
@@ -91,7 +91,7 @@ onMounted(() => {
     >
       <ContentRenderer
         :value="content"
-        class="w-full max-w-none text-white/90 prose prose-invert prose-p:italic prose-h2:text-center prose-h2:text-xl prose-h2:font-normal"
+        class="w-full max-w-none text-white/90 prose prose-invert prose-p:italic prose-p:tracking-wider prose-h2:text-center prose-h2:text-xl prose-h2:font-semibold prose-h2:mb-4 prose-h2:tracking-widest"
       />
       <!-- Degree section -->
       <section

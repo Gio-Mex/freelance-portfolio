@@ -36,7 +36,7 @@ onMounted(() => {
   <section class="relative flex h-screen mt-15 md:mt-40 lg:mt-20">
     <span
       :class="[
-        'absolute top-1/2 md:relative md:top-1/7 text-3xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight font-semibold px-9 lg:ms-18 transition-opacity duration-1000 ease-in-out z-10',
+        'absolute top-1/2 md:relative md:top-1/7 text-3xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight font-semibold tracking-wide px-9 lg:ms-18 transition-opacity duration-1000 ease-in-out z-10',
         titleVisible ? 'opacity-100' : 'opacity-0',
       ]"
     >
@@ -45,9 +45,9 @@ onMounted(() => {
         Sono Giorgio, il tuo
       </p>
       <h1
-        class="animated-gradient bg-clip-text text-transparent text-7xl md:text-9xl lg:text-center lg:scale-107 xl:scale-125 tracking-tight"
+        class="animated-gradient bg-clip-text text-transparent text-6xl md:text-9xl text-center scale-105 lg:scale-100 xl:scale-115 tracking-wider font-bold"
       >
-        web dev
+        WEB DEV
       </h1></span
     >
 
@@ -71,10 +71,10 @@ onMounted(() => {
       <section
         class="py-16 backdrop-blur-xs bg-indigo-500/5 border-y border-indigo-500/10 px-3"
       >
-        <h2 class="text-4xl md:text-5xl font-normal mb-8">
+        <h2 class="text-3xl md:text-4xl font-normal tracking-wide leading-relaxed mb-8">
           Idee, persone e codice:<br /><span
-            class="text-5xl md:text-6xl animated-gradient bg-clip-text text-transparent font-semibold"
-            >la connessione perfetta</span
+            class="text-5xl md:text-6xl animated-gradient bg-clip-text text-transparent font-semibold tracking-wider"
+            >LA CONNESSIONE PERFETTA</span
           >
         </h2>
         <p class="text-lg md:px-20 italic">
@@ -83,7 +83,7 @@ onMounted(() => {
           mondo digitale.<br />
         </p>
       </section>
-      <p class="text-2xl px-2 md:px-20 my-14">
+      <p class="text-2xl px-2 md:px-20 my-14 tracking-wide">
         Ecco le <span class="text-indigo-400">qualità umane</span> che mi
         guidano nello sviluppo e nella collaborazione:
       </p>
@@ -95,11 +95,11 @@ onMounted(() => {
           class="flex flex-col items-start backdrop-blur-sm bg-indigo-500/5 border border-indigo-500/10 rounded-sm p-8 shadow-md transition-transform hover:scale-105 duration-300 hover:shadow-blue-500/50"
         >
           <h3
-            class="text-indigo-400 text-lg font-semibold mb-2 flex items-center mx-auto"
+            class="text-indigo-400 text-lg font-semibold tracking-widest mb-2 flex items-center mx-auto"
           >
             {{ skill.icon }} {{ skill.title }}
           </h3>
-          <p>{{ skill.description }}</p>
+          <p class="tracking-wide">{{ skill.description }}</p>
         </div>
       </div>
     </div>
@@ -111,10 +111,10 @@ onMounted(() => {
       <section
         class="py-16 mb-10 backdrop-blur-xs bg-indigo-500/5 border-y border-indigo-500/10"
       >
-        <h2 class="text-4xl md:text-5xl font-normal mb-8">
+        <h2 class="text-3xl md:text-4xl font-normal tracking-wide leading-relaxed mb-8">
           Logica e design: <br /><span
-            class="text-5xl md:text-6xl animated-gradient bg-clip-text text-transparent font-semibold"
-            >le mie conoscenze sono tue</span
+            class="text-5xl md:text-6xl animated-gradient bg-clip-text text-transparent font-semibold tracking-wider"
+            >LE MIE CONOSCENZE SONO TUE</span
           >
         </h2>
         <p class="text-lg md:px-20 italic">
@@ -123,7 +123,7 @@ onMounted(() => {
           veloci e ottimizzati per ogni dispositivo.
         </p>
       </section>
-      <p class="text-2xl px-3 md:px-20 my-14">
+      <p class="text-2xl px-3 md:px-20 my-14 tracking-wide">
         Questo è il mio
         <span class="text-indigo-400">stack tecnologico</span> che trasforma le
         tue idee in realtà digitali:
@@ -142,7 +142,7 @@ onMounted(() => {
             height="40"
             class="text-white/90! hover:drop-shadow-[0_0_8px_rgba(139,92,246,0.7)]"
           />
-          <span class="mt-2 text-sm font-medium flex"
+          <span class="mt-2 text-sm font-medium flex tracking-wide"
             >{{ skill.title }}
             <Icon
               v-if="skill.learning"
@@ -160,8 +160,8 @@ onMounted(() => {
   <section
     class="max-w-6xl flex flex-col justify-center items-center mx-auto pb-16 bg-transparent text-center text-white/90"
   >
-    <h3 class="text-4xl px-2 md:px-20 mt-15 mb-10">
-      Cosa significa tutto questo <span class="text-indigo-400">per te</span>?
+    <h3 class="text-4xl px-2 md:px-20 mt-15 mb-10 tracking-wide">
+      Cosa significa tutto questo <span class="text-indigo-400">PER TE</span>?
     </h3>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
@@ -176,7 +176,8 @@ onMounted(() => {
           height="50"
           class="text-indigo-500! hover:drop-shadow-[0_0_8px_rgba(139,92,246,0.7)]"
         />
-        <span class="mt-4 text-lg">{{ feature.title }}</span>
+        <span class="mt-4 text-lg text-blue-400 font-semibold tracking-widest">{{ feature.title }}</span>
+        <p class="mt-1 tracking-wide">{{ feature.description }}</p>
       </section>
     </div>
   </section>

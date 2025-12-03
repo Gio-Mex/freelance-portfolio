@@ -1,9 +1,9 @@
 ---
-title: "Work 4 Me"
+title: "WORK 4 ME"
 description: "Questo è stato il mio primo progetto full-stack. È un'ipotetica piattaforma online, dove gli utenti possono chiedere aiuto ad altri utenti per vari compiti domestici in cambio di un compenso. È stato realizzato con Vue.js e Node.js."
 thumbnail: "/img/thumbnails/work-4-me-img.webp"
 siteLink: "https://work-4-me.netlify.app"
-bedges:
+badges:
   - "mdi:vuejs"
   - "mdi:nodejs"
 features:

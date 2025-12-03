@@ -103,6 +103,7 @@ onMounted(() => {
 .link {
   transition: all 0.2s;
   text-decoration-color: transparent;
+  letter-spacing: 0.1rem;
 }
 .link:hover {
   text-decoration: underline;

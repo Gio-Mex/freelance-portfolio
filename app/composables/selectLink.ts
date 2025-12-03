@@ -4,10 +4,10 @@ export const useNavigation = () => {
   const menuOpen = ref(false);
 
   const links = ref([
-    { name: "Home", path: "/", selected: false },
-    { name: "Progetti", path: "/progetti", selected: false },
-    { name: "Bio", path: "/bio", selected: false },
-    { name: "Contatti", path: "/contatti", selected: false },
+    { name: "HOME", path: "/", selected: false },
+    { name: "PROGETTI", path: "/progetti", selected: false },
+    { name: "BIO", path: "/bio", selected: false },
+    { name: "CONTATTI", path: "/contatti", selected: false },
   ]);
 
   const selectLink = (name: string) => {

@@ -56,13 +56,13 @@ const handleSubmit = async () => {
     class="bg-[url('/img/bg-abstract.webp')] fixed top-0 left-0 h-screen w-full bg-cover bg-no-repeat bg-center -z-20"
   ></div>
   <div class="mb-6 pt-22 px-3">
-    <h1 class="text-5xl font-semibold text-center animated-gradient">
+    <h1 class="text-5xl font-semibold text-center animated-gradient tracking-wider">
       Contattami
     </h1>
-    <p class="text-lg text-center mt-5 italic">
+    <p class="text-lg text-center mt-5 italic tracking-wide">
       Hai un’idea o vuoi dare una nuova immagine alla tua attività?<br />
       Scrivimi e parliamone: insieme possiamo costruire
-      <span class="text-indigo-400">il tuo spazio digitale</span>.
+    <span class="text-indigo-400">IL TUO SPAZIO DIGITALE</span>.
     </p>
   </div>
   <section class="flex justify-center">

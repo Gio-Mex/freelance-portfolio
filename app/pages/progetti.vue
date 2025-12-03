@@ -64,14 +64,14 @@ onBeforeUnmount(() => {
   <CanvasParticles />
 
   <!-- Hero -->
-  <section class="h-screen flex flex-col items-center justify-center">
-    <p class="text-5xl xl:text-7xl font-semibold z-10">Alcuni dei miei</p>
+  <div class="h-screen flex flex-col items-center justify-center">
+    <p class="text-5xl xl:text-7xl font-semibold tracking-wide z-10">Alcuni dei miei</p>
     <h1
-      class="h-1/4 animated-gradient bg-clip-text text-transparent font-semibold text-7xl md:text-9xl"
+      class="h-1/4 animated-gradient bg-clip-text text-transparent font-semibold tracking-wider text-7xl md:text-9xl"
     >
-      progetti
+      PROGETTI
     </h1>
-  </section>
+  </div>
 
   <!-- Projects -->
    <ContentRenderer v-if="projects" :value="projects" />
@@ -91,16 +91,16 @@ onBeforeUnmount(() => {
           >
             <span class="absolute flex top-4 right-3 p-2">
               <Icon
-                v-for="(bedge, i) in project.meta.bedges"
+                v-for="(badge, i) in project.meta.badges"
                 :key="i"
-                :icon="bedge"
+                :icon="badge"
                 width="38"
                 height="38"
                 class="bg-black rounded-full border-s border-indigo-400 py-2 mr-1"
               />
             </span>
 
-            <h3 class="w-3/4 md:w-full animated-gradient text-2xl font-semibold mb-3">
+            <h3 class="w-3/4 md:w-full animated-gradient text-xl font-semibold tracking-wider mb-3">
               {{ project.title }}
             </h3>
 
@@ -112,7 +112,7 @@ onBeforeUnmount(() => {
               loading="eager"
             />
 
-            <p class="whitespace-pre-line mb-6">{{ project.description }}</p>
+            <p class="tracking-wide mb-6 ">{{ project.description }}</p>
 
             <p class="text-blue-500 font-bold mb-2">Funzionalità:</p>
             <ul class="list-disc list-inside text-indigo-200 text-sm space-y-3">
