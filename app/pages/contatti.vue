@@ -83,7 +83,7 @@ const handleSubmit = async () => {
     </div>
   </section>
   <div
-    class="max-w-xl my-4 mx-2 p-6 flex justify-self-center rounded-lg shadow-lg shadow-blue-500 border border-indigo-300 backdrop-blur-md"
+    class="max-w-xl my-4 mx-2 md:mx-auto p-6 flex rounded-lg shadow-lg shadow-blue-500 border border-indigo-300 backdrop-blur-md"
   >
     <form @submit.prevent="handleSubmit" class="space-y-5">
       <input
